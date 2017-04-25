@@ -1,6 +1,8 @@
 # node-sloc
 A small tool written in node for counting source lines of code.
 
+[![NPM](https://nodei.co/npm/node-sloc.png)](https://nodei.co/npm/node-sloc/)
+
 ## Installation
 Can be used as either a command line application or as a module.
 
@@ -44,6 +46,23 @@ options:
  node-sloc "../app" --include-extensions "aaa, bbb, ccc" --ignore-extensions "xml, yaml"
  node-sloc "../app" --ignore-paths "node_modules"
  node-sloc file.js
+```
+
+```
+$ node-sloc . -x "node_modules"
+Reading file(s)...
+
+    +---------------------------------------------------+
+    | SLOC                          | 2682              |
+    |-------------------------------|--------------------
+    | Lines of comments             | 206               |
+    |-------------------------------|--------------------
+    | Blank lines                   | 134               |
+    |-------------------------------|--------------------
+    | Files counted                 | 27                |
+    |-------------------------------|--------------------
+    | Total LOC                     | 2888              |
+    +---------------------------------------------------+
 ```
 
 ## Module
